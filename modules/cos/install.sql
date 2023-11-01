@@ -1,0 +1,8 @@
+BEGIN;
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_mode', 'upload', '存储方式', '', 'select', 'local', '{\"local\":\"本地磁盘存储\",\"cos\":\"腾讯云对象存储COS\"}', 'required', '', '0', '99');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_bucket', 'upload', '存储空间名称', '请在对象存储控制台查询', 'string', '', null, '', '', '0', '98');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_access_id', 'upload', 'secretId', '请在访问管理控制台查询', 'string', '', null, '', '', '0', '97');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_secret_key', 'upload', 'secretKey', '请在访问管理控制台查询', 'string', '', null, '', '', '0', '96');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_url', 'upload', '存储区域', '请选择存储区域', 'select', '', '{"ap-beijing-1":"北京一区 ap-beijing-1","ap-beijing":"北京 ap-beijing","ap-nanjing":"南京 ap-nanjing","ap-shanghai":"上海 ap-shanghai","ap-guangzhou":"广州 ap-guangzhou","ap-chengdu":"成都 ap-chengdu","ap-chongqing":"重庆 ap-chongqing","ap-shenzhen-fsi":"深圳金融 ap-shenzhen-fsi","ap-shanghai-fsi":"上海金融 ap-shanghai-fsi","ap-beijing-fsi":"北京金融 ap-beijing-fsi","ap-hongkong":"中国香港 ap-hongkong","ap-singapore":"新加坡 ap-singapore","ap-mumbai":"孟买 ap-mumbai","ap-jakarta":"雅加达 ap-jakarta","ap-seoul":"首尔 ap-seoul","ap-bangkok":"曼谷 ap-bangkok","ap-tokyo":"东京 ap-tokyo","na-siliconvalley":"硅谷（美西） na-siliconvalley","na-ashburn":"弗吉尼亚（美东） na-ashburn","na-toronto":"多伦多 na-toronto","sa-saopaulo":"圣保罗 sa-saopaulo","eu-frankfurt":"法兰克福 eu-frankfurt","eu-moscow":"莫斯科 eu-moscow"}', '', '', '0', '95');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_cdn_url', 'upload', 'CDN地址', '(可选)请输入CDN加速域名，以http(s)://开头', 'string', null, null, '', '', '0', '94');
+COMMIT;
